@@ -1,0 +1,25 @@
+#scoreTableClassification {
+    border: black 3px solid;
+    margin: 25px auto 25px auto;
+}
+#tableHead {
+    border: black 1px solid;
+}
+#scoreTable {
+    padding-top: 15px;
+    bottom: 15px;
+}
+.tableNumberElement {
+    text-align: center;
+}
+.positionElement{
+    border: black 1px solid;
+}
+.scoreTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.teamLogo {
+    height: 25px;
+    width: 25px;
+    float: right;
+}

@@ -1,0 +1,64 @@
+/* Common css to all the web pages */
+/* Body */
+body {
+    background-color: #F6F7F0;
+}
+
+/* Header */
+#header {
+    /*background: #007bff;*/
+    background: #47650B;
+    color: white;
+    border-radius: 0;
+    text-align: center;
+    height: 100px;
+
+}
+
+#header .imgLeft {
+    width: 80px;
+    width: 80px;
+    display: inline-block;
+    float:left;
+    margin-right: 10px;
+}
+
+#header .imgRight {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    float:left;
+
+}
+
+.pageTitle {
+    display: inline-block;
+    float:left;
+    margin-right: 10px;
+}
+
+.pageTitle h1 {
+    font-size: 40px;
+}
+
+.title {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Remove balls from the header when the page is small */
+@media (max-width: 768px) {
+    .header img {
+        display:none !important;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #47650B;
+    margin-top: 30px;
+}
+
+.page-footer {
+    color: white;
+}

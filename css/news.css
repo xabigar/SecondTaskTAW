@@ -1,0 +1,41 @@
+.welcomeLogo {
+    height: 100%;
+    width: 100%;
+}
+
+.welcomeDiv {
+    margin-top: 15px;
+}
+
+.B {
+    border-right: thick solid #233206;
+    border-left: thick solid #233206;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+hr {
+    background-color: #233206;
+}
+
+@media (max-width: 768px) {
+
+    .A {
+        order : 1;
+    }
+
+    .B {
+        order : 3;
+
+        border-top: thick solid #233206;
+        border-top-width: 1px;
+        border-right: none;
+        border-left: none;
+    }
+
+    .C {
+        order : 2;
+        border-top: thick solid #233206;
+        border-top-width: 1px;
+    }
+}

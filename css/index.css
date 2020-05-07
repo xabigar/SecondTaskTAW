@@ -1,4 +1,52 @@
 /* Configuration for the welcome image */
+.thumbnail {
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background: white;
+    overflow: hidden;
+
+}
+
+
+#frame {
+    position: absolute;
+    top: -9999px;
+    right: -9999px;
+    left: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    max-width: 100%;
+}
+
+/** Button */
+.button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: .7rem .7rem;
+    margin: 0 0 1rem 0;
+    background: #47650B;
+    color: white;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    border-radius: 56px 56px 56px 56px;
+    -moz-border-radius: 56px 56px 56px 56px;
+    -webkit-border-radius: 56px 56px 56px 56px;
+    border: 0px solid #000000;
+}
+
+
+
+/** Hide the input file to avoid to show the name */
+.button input[type="file"] {
+    display: none;
+}
+
 .defaultWelcomeLogo {
     height: 100%;
     width: 100%;

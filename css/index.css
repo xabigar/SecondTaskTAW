@@ -1,4 +1,8 @@
-/* Configuration for the welcome image */
+#batteryImg {
+    width: 15px;
+    height: 20px;
+}
+
 .thumbnail {
     position: relative;
     display: block;
@@ -10,7 +14,6 @@
     overflow: hidden;
 
 }
-
 
 #frame {
     position: absolute;
@@ -70,6 +73,12 @@
     border-left: thick solid #233206;
     border-left-width: 1px;
     border-right-width: 1px;
+}
+
+/* Battery styles */
+.batteryMessage {
+    height: 25px;
+    width: 25px;
 }
 
 /* Size of the social network logos */

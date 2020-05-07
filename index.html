@@ -92,23 +92,26 @@
             </div></br>
             <!-- Placeholder to show the image -->
             <figure class="thumbnail">
-                <img id="frame" src="img/cam.jpg">
+                <img id="frame" src="img/camera.gif">
             </figure></br>
 
         </div>
         <div class="col-md-4 B">
-            <h2>Follow us</h2>
-            <ul>
-                <br/>
-                Facebook:<br/>
-                <a title="Facebook" href="https://es-es.facebook.com/"><img src='./img/facebook.png' class='socialNetworkLogo'/></a><br/>
-                Instagram:<br/>
-                <a title="Instagram" href="https://www.instagram.com/"><img src='./img/instagram.png' class='socialNetworkLogo'/></a><br/>
-                Twitter:<br/>
-                <a class="twitter-follow-button" href="https://twitter.com/Score">Follow @Score</a></li><br/>
-                YouTube:<br/>
-                <div class="g-ytsubscribe" data-channel="Goal" data-layout="default" data-count="default"></div>
-            </ul>
+            <h2>User Information</h2>
+            <div id="retrieveUserInformation">
+                <input type="text" id="inputUsername"/>
+                <button id="submitUsername">Submit</button>
+                <label id="notValidUser"></label>
+            </div>
+            <div id="showUserInformation">
+                <label id="showUsername"></label>
+            </div>
+            <div id="batteryInformation">
+                <h2>Battery Information</h2></br>
+                <img id="batteryImg" src="#"/><span> Battery level: </span><label id="batteryLevel"></label></br>
+                <label id="chargingStatus"></label></br>
+                <label id="batteryMessage"></label>
+            </div>
         </div>
         <div class="col-md-4 C">
             <h2>Where are we?</h2>

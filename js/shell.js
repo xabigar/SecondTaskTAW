@@ -19,6 +19,7 @@ let app = {
     offLineMessage: document.getElementById('offLineMessage')
 };
 
+
 // Check internet connection
 setInterval (function () {
     app.isOffline = ! window.window.navigator.onLine;

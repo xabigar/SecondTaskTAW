@@ -11,6 +11,26 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+let app = {
+    /** @var isOffline Boolean Used to know when the app is offline or not */
+    isLoading: true,
+    spinner: document.getElementById('loader'),
+    isOffline: true,
+    offLineMessage: document.getElementById('offLineMessage')
+};
+
+// Check internet connection
+setInterval (function () {
+    app.isOffline = ! window.window.navigator.onLine;
+    if (app.isOffline) {
+        app.spinner.hidden = false
+        app.isLoading = true
+    } else {
+        app.spinner.hidden = true
+        app.isLoading = false
+    }
+}, 1 * 1000);
+
 function redirect (a) {
     if (window.window.navigator.onLine) {
         window.location.href = a.name;

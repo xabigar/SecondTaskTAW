@@ -1,8 +1,6 @@
 (function () {
 
     var app = {
-        isLoading: true,
-        spinner: document.getElementById('loader'),
         // DOM elements
         frame: document.getElementById('frame'),
         camera: $('#camera')
@@ -26,14 +24,14 @@
     });
 
     /** @var reader FileReader Will be used to read the content of the uploaded images */
-    var reader = new FileReader ();
+    let reader = new FileReader ();
 
     // Bind on change event to the input type file
     // This is when the user starts to track a new event.
     app.camera.change (function (e) {
 
         /** @var file File Get the first (and only) file selected */
-        var file = e.target.files[0];
+        let file = e.target.files[0];
 
 
         // Check the file type do avoid non images
@@ -54,13 +52,4 @@
             };
         })(file);
     });
-
-    // Remove loading
-    setTimeout(function(){
-        //do what you need here
-        if (app.isLoading) {
-            app.spinner.hidden = true
-            app.isLoading = false
-        }
-    }, 4000);
 })();

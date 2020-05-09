@@ -30,7 +30,7 @@ setInterval (function () {
         app.spinner.hidden = true
         app.isLoading = false
     }
-}, 1 * 1000);
+}, 3000);
 
 function redirect (a) {
     if (window.window.navigator.onLine) {

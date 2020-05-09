@@ -5,8 +5,7 @@ const cacheAssets = [
     'index.html',
     '/pages/error.html',
     '/css/shell.css',
-    '/js/shell.js',
-    '/img/ball.png'
+    '/js/shell.js'
 ];
 
 // Call Install Event
